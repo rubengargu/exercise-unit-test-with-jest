@@ -7,10 +7,12 @@ const fromEuroToDollar = function(valueInEuro){
 }
 
 
-const fromDollarToYen = () =>{
-    return number * 127.9/1.2 ;
+const fromDollarToYen = (valueInEuro) =>{
+    let valueInYen = valueInEuro * 127.9;
+    return valueInYen
 }
-const fromYenToPound =() =>{
-    return number *0.8/127.9
+const fromYenToPound =(valueInEuro) =>{
+    let valueInPound = valueInEuro * 0.8;
+    return valueInPound
 }
-module.exports = {  fromEuroToDollar }
+module.exports = {  fromEuroToDollar, fromDollarToYen, fromYenToPound }
